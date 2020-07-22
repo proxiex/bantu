@@ -50,10 +50,9 @@ componentDidMount() {
     let pieData = [];
     let labels = [];
     if (data) {
-        data.slice(0,5).map((coin, index) => {
+        data.slice(0,5).map(function(coin, index){
             labels.push(coin.name)
             pieData.push(coin.marketCapUsd)
-            
         })
     }
 
