@@ -13,7 +13,7 @@ function MainNav() {
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav mx-auto">
         <li className="nav-item">
-          <a className="nav-link" href="/">Rankings <span className="sr-only">(current)</span></a>
+          <a className="nav-link" href="/">Coins <span className="sr-only">(current)</span></a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/chart">Chart</a>

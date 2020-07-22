@@ -89,11 +89,12 @@ componentDidMount() {
           { isLoading ? 
               <Row style={{justifyContent: 'center'}}>
                   <Spinner
-                    type="ThreeDots"
-                    color="#13b2bc"
-                    height={40}
-                    width={40}
-                    />
+                      as="span"
+                      animation="grow"
+                      size="xl"
+                      role="status"
+                      aria-hidden="true"
+                  />
                 </Row> :
                 <>
               <Doughnut data={pieDataSet} />
