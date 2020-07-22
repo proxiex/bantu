@@ -38,7 +38,6 @@ class GetCoins extends Component {
       const newPriceUsd = result.priceUsd;
       const coin = coinData.data[coinId]
 
-      const diff = newPriceUsd - coin.priceUsd;
       if (newPriceUsd > coin.priceUsd) {
         classn = 'up';
       } else if (newPriceUsd < coin.priceUsd) {
@@ -88,7 +87,7 @@ class GetCoins extends Component {
 
     return (
       <div className='container'>
-        {/* <Websocket url='wss://ws.coincap.io/trades/binance' onMessage={this.handleData.bind(this)}/> */}
+        <Websocket url='wss://ws.coincap.io/trades/binance' onMessage={this.handleData.bind(this)}/>
         <div className='row mt-5 '>
           <div className='col-lg-12 col-sm-12 mt-4  '>
             <h3 className='title-section'>

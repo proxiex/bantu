@@ -1,4 +1,4 @@
-import { FETCH_COINS_SUCCESS, COINS_UPDATE } from '../actions/types';
+import { FETCH_COINS_SUCCESS } from '../actions/types';
 
    const initialState = {
     coins: [],

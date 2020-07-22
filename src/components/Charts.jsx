@@ -4,7 +4,7 @@ import { withRouter } from 'react-router'
 import './styles.css';
 import { Row, Spinner } from 'reactstrap';
 import {fetchCoinsAction } from '../actions/fetchCoinsAction';
-import {Pie, Doughnut} from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
 import 'chart.js'
 
