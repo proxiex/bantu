@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 function MainNav() {
@@ -13,13 +14,16 @@ function MainNav() {
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav mx-auto">
         <li className="nav-item">
-          <a className="nav-link" href="/">Coins <span className="sr-only">(current)</span></a>
+          {/* <a className="nav-link" href="/">Coins <span className="sr-only">(current)</span></a> */}
+          <Link to='/' className="nav-link">Coins <span className="sr-only">(current)</span></Link>
+
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/chart">Chart</a>
+          {/* <a className="nav-link" href="/chart">Chart</a> */}
+          <Link to='/chart' className="nav-link">Chart</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/footprint">Footprint</a>
+          <Link to='/footprint' className="nav-link">Footprint</Link>
         </li>
         
         <li className="nav-item">

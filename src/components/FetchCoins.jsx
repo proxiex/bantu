@@ -53,7 +53,7 @@ class GetCoins extends Component {
       this.setState({
         coins: coinData
       });
-    }, 3000);
+    }, 1000);
   }
 
 
@@ -84,7 +84,6 @@ class GetCoins extends Component {
   render () {
     const { isLoading, coins } = this.props;
     const { data } = coins;
-
     return (
       <div className='container'>
         <Websocket url='wss://ws.coincap.io/trades/binance' onMessage={this.handleData.bind(this)}/>
