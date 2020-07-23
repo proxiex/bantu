@@ -25,7 +25,7 @@ componentDidMount() {
     const { footPrints, isLoading } = this.props;
     const { data } = footPrints;
     return (
-      <div className='container'>
+      <div style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}>
         <div className='row mt-5 '>
           <div className='col-lg-12 col-sm-12 mt-4  '>
             <h3 className='title-section'>
@@ -44,12 +44,12 @@ componentDidMount() {
                   />
                 </Row> :
                 <>
-                <Table hover>
+                <Table hover responsive>
               <thead>
                 <tr>
                   <th>Language</th>
                   <th>Platform</th>
-                  <th>User Agent</th>
+                  <th style={{width: '30%'}}>User Agent</th>
                   <th>IP Address</th>
                   <th>Latitude</th>
                   <th>Longitude</th>
@@ -71,7 +71,7 @@ componentDidMount() {
                     <td>{print.longitude}</td>
                     <td>{print.city}</td>
                     <td>{print.country}</td>
-                    <td>{date}</td>
+                    <td>{`${date}`}</td>
                   </tr>
                   )
                 })

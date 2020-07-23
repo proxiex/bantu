@@ -105,7 +105,7 @@ class GetCoins extends Component {
                     />
               </Row> :
               <>
-            <Table hover>
+            <Table hover responsive>
               <thead>
                 <tr>
                   <th>Rank</th>
