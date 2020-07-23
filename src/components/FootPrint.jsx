@@ -24,7 +24,6 @@ componentDidMount() {
   render () {
     const { footPrints, isLoading } = this.props;
     const { data } = footPrints;
-    console.log(isLoading)
     return (
       <div className='container'>
         <div className='row mt-5 '>
@@ -56,10 +55,12 @@ componentDidMount() {
                   <th>Longitude</th>
                   <th>City</th>
                   <th>Country</th>
+                  <th>Time Stamp</th>
                 </tr>
               </thead>
               <tbody>
                 {data.map((print, index) => {
+                  const date = new Date(print.time_stamp)
                   return (
                     <tr key={index}>
                     <td>{print.language}</td>
@@ -70,6 +71,7 @@ componentDidMount() {
                     <td>{print.longitude}</td>
                     <td>{print.city}</td>
                     <td>{print.country}</td>
+                    <td>{date}</td>
                   </tr>
                   )
                 })
